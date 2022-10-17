@@ -19,17 +19,23 @@
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
-		<header class="head-sect">
+		<header class="header-sect">
 			<div class="container head-nav"
 				><nav class="nav-container">
-					<a href="./index.html" lang="en" class="logo"><span class="logo-accent">Web</span>Studio</a>
-					<ul class="list nav-list">
+					<a href="./index.html" lang="en" class="logo"><span class="logo--accent">Web</span>Studio</a>
+					<button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+						<svg width="24" height="24">
+							<use class="menu-button__close-icon" href="./images/symbol-defs.svg#icon-close-menu"></use>
+							<use class="menu-button__menu-icon" href="./images/symbol-defs.svg#icon-menu"></use>
+						</svg>
+					</button>
+					<!-- <ul class="list nav-list">
 						<li class="nav-item"><a href="./index.html" class="link nav-link current">Студія</a></li>
 						<li class="nav-item"><a href="./portfolio.html" class="link nav-link">Портфоліо</a></li>
 						<li class="nav-item"><a href="" class="link nav-link">Контакти</a></li>
-					</ul>
+					</ul> -->
 				</nav>
-				<ul class="list nav-container">
+				<!-- <ul class="list nav-container">
 					<li class="nav-item"
 						><a href="mailto:info@devstudio.com" class="link nav-link contact-link"
 							><svg width="16px" height="12px" class="contact-icon">
@@ -45,17 +51,17 @@
 							>+38 096 111 11 11</a
 						></li
 					>
-				</ul>
+				</ul> -->
 			</div>
 		</header>
 		<main>
 			<!-- Hero section -->
-			<section class="hero-sect hero-bg">
+			<!-- <section class="hero-sect hero-bg">
 				<h1 class="hero-header">Ефективні рішення для вашого бізнесу</h1>
 				<button class="basic-button hero-button" type="button" data-modal-open>Замовити послугу</button>
-			</section>
+			</section> -->
 			<!-- Qualities -->
-			<section class="section-qual">
+			<!-- <section class="section-qual">
 				<div class="container">
 					<h2 class="visually-hidden">Особливості</h2>
 					<ul class="list qualities-list">
@@ -97,9 +103,9 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 			<!-- What we do -->
-			<section class="section">
+			<!-- <section class="section">
 				<div class="container">
 					<h2 class="main-header">Чим ми займаємося</h2>
 					<ul class="list works-list">
@@ -117,9 +123,9 @@
 						>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 			<!-- Our team -->
-			<section class="section team-section">
+			<!-- <section class="section team-section">
 				<div class="container">
 					<h2 class="main-header">Наша команда</h2>
 					<ul class="list team-list">
@@ -235,9 +241,9 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 			<!-- Clients -->
-			<section class="section">
+			<!-- <section class="section">
 				<div class="container">
 					<h2 class="main-header">Постійні клієнти</h2>
 					<ul class="list client-list">
@@ -273,9 +279,9 @@
 						></li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 		</main>
-		<footer class="footer">
+		<!-- <footer class="footer">
 			<div class="container">
 				<div class="footer-cont">
 					<div>
@@ -335,9 +341,9 @@
 					</form>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
 		<!-- Modal -->
-		<div class="backdrop is-hidden" data-modal>
+		<!-- <div class="backdrop is-hidden" data-modal>
 			<div class="modal"
 				><button type="button" class="basic-button close-button" data-modal-close>
 					<svg width="18px" height="18px">
@@ -383,7 +389,8 @@
 					<button class="basic-button hero-button subscr-but send-button" type="submit">Відправити</button>
 				</form>
 			</div>
-		</div>
+		</div> -->
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

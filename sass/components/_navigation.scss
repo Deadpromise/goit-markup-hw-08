@@ -1,69 +1,103 @@
+
+.menu-button {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+    .menu-button__close-icon {
+        display: none;
+    }
+    &.is-open .menu-button__close-icon {
+        display: block;
+    }
+    &.is-open .menu-button__menu-icon {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
 .nav-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     /* outline: 1px solid red; */
 }
 
-.nav-list {
-    display: flex;
-    align-items: center;
-    margin-left: 90px;
+// .nav-list {
+//     display: flex;
+//     align-items: center;
+//     margin-left: 90px;
 
-    /* outline: 1px solid red; */
-}
+//     /* outline: 1px solid red; */
+// }
 
-.nav-item {
-    position: relative;
-    margin-left: 50px;
+// .nav-item {
+//     position: relative;
+//     margin-left: 50px;
 
-    &:first-child {
-        margin-left: 0;
-    }
-}
+//     &:first-child {
+//         margin-left: 0;
+//     }
+// }
 
+// .nav-link {
+//     display: block;
+//     padding: 32px 0;
 
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: $header-color;
+//     transition: color $cubic-function;
 
-.nav-link {
-    display: block;
-    padding: 32px 0;
+//     &:hover,
+//     &:focus {
+//         color: $accent-color;
+//     }
+//     /* outline: 1px solid greenyellow; */
+// }
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $header-color;
-    transition: color $cubic-function;
+// .current {
+//     color: $accent-color;
 
-    &:hover,
-    &:focus {
-        color: $accent-color;
-    }
-    /* outline: 1px solid greenyellow; */
-}
+//     &::after {
+//         content: '';
+//         position: absolute;
+//         bottom: -1px;
+//         display: block;
+//         background: $accent-color;
+//         width: 100%;
+//         height: 4px;
+//         border-radius: 2px;
+//     }
+// }
 
-.current {
-    color: $accent-color;
+// .contact-link {
+//     display: flex;
+//     align-items: center;
+//     color: $main-color;
+// }
 
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -1px;
-        display: block;
-        background: $accent-color;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-    }
-}
-
-.contact-link {
-    display: flex;
-    align-items: center;
-    color: $main-color;
-}
-
-.contact-icon {
-    fill: currentColor;
-    margin-right: 10px;
-}
+// .contact-icon {
+//     fill: currentColor;
+//     margin-right: 10px;
+// }
