@@ -1,0 +1,27 @@
+.client-list {
+    display: flex;
+    justify-content: center;
+}
+
+.client-list__item:not(:first-child) {
+    margin-left: 30px;
+}
+// client-link
+.client-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    fill: $icon-color;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    transition: fill $cubic-function,
+        border-color $cubic-function;
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+        border-color: $accent-color;
+        }
+}

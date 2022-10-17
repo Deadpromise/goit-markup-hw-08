@@ -1,0 +1,63 @@
+.hero-sect {
+    padding: 200px 0;
+    background-color: $secondary-background-color;
+    text-align: center;
+}
+
+.hero-bg {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-header {
+    width: 700px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $secondary-color;
+}
+
+.basic-button {
+    border: 0px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hero-button {
+    min-width: 216px;
+    border-radius: 4px;
+    padding: 10px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: $secondary-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color $cubic-function;
+
+    &:hover,
+    &:focus {
+        background-color: $active-button;
+    }
+}
+

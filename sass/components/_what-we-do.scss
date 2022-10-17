@@ -1,0 +1,39 @@
+.main-header {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: $header-color;
+}
+
+.works-list {
+    display: flex;
+    /* outline: 1px dashed red; */
+    margin-left: -30px;
+}
+
+.work-item {
+    position: relative;
+    flex-basis: calc((100% / 3) - 30px);
+    margin-left: 30px;
+}
+
+.works-text {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $secondary-color;
+}

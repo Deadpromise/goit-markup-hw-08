@@ -1,0 +1,74 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $main-color;
+    background-color: $main-background-color;
+}
+
+h1,
+h2,
+h3,
+h5,
+h5,
+h6 {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+// .list p {
+//     margin: 0;
+// }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* outline: 1px solid purple; */
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* outline: 1px solid yellowgreen; */
+}

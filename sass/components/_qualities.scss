@@ -1,0 +1,39 @@
+.section-qual {
+    padding-top: 94px;
+}
+
+.qualities-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $filter-bg;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+
+.qualities-list {
+    display: flex;
+
+}
+
+.qualities-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+    margin-left: 30px;
+/* outline: 1px solid teal; */
+    &:first-child {
+        margin-left: 0;
+        }   
+}
+
+.qualities-list__header {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $header-color;
+
+}
