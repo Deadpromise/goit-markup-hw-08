@@ -80,6 +80,18 @@ a {
   border-bottom: 1px solid #ECECEC;
 }
 
+.head-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 59px;
+}
+@media screen and (min-width: 768px) {
+  .head-nav {
+    min-height: 79px;
+  }
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
@@ -110,14 +122,10 @@ a {
   border: none;
   outline: none;
 }
-.menu-button .menu-button__close-icon {
-  display: none;
-}
-.menu-button.is-open .menu-button__close-icon {
-  display: block;
-}
-.menu-button.is-open .menu-button__menu-icon {
-  display: none;
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .nav-container {
@@ -125,4 +133,86 @@ a {
   align-items: center;
   justify-content: space-between;
   /* outline: 1px solid red; */
+}
+@media screen and (max-width: 767px) {
+  .nav-container {
+    display: none;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  /* outline: 1px solid red; */
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #ffffff;
+  z-index: 999;
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-container .menu-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.menu-list__item:not(:first-child) {
+  margin-top: 35px;
+}
+
+.menu-list__link {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.menu-list__link:hover, .menu-list__link:focus {
+  color: #2196f3;
+}
+
+.contact-list__tel {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.contact-list__mail {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.165;
+  letter-spacing: 0.02em;
+}
+
+.menu-socials {
+  display: flex;
+  align-items: center;
+}
+
+.menu-socials__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.menu-socials__link {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
