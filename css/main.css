@@ -347,20 +347,50 @@ a {
   background-color: #2f303a;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero-sect {
+    padding: 200px 0;
+  }
+}
 
 .hero-bg {
   height: 400px;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg.jpg);
   background-size: 480px 400px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-bg {
+    max-width: 768px;
+    background-size: 768px 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-bg {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-bg {
+    height: 600px;
+    max-width: 1600px;
+    background-size: 1600px 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-bg {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-desktop@2x.jpg);
   }
 }
 
@@ -375,6 +405,13 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .hero-sect__header {
+    max-width: 700px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-sect__button {
@@ -392,4 +429,9 @@ a {
 }
 .hero-sect__button:hover, .hero-sect__button:focus {
   background-color: #188ce8;
+}
+@media screen and (min-width: 1200px) {
+  .hero-sect__button {
+    min-width: 216px;
+  }
 }/*# sourceMappingURL=main.css.map */
