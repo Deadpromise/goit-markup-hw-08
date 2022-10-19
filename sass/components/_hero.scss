@@ -1,0 +1,72 @@
+
+
+
+
+
+
+
+.hero-sect {
+    padding: 118px 0;
+    background-color: $secondary-background-color;
+    text-align: center;
+}
+
+.hero-bg {
+    height: 400px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../../images/hero-bg.jpg);
+    background-size: 480px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../../images/hero-bg@2x.jpg);
+    }
+}
+
+.hero-sect__header {
+    max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $secondary-color;
+}
+
+
+.hero-sect__button {
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: $secondary-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color $cubic-function;
+
+    &:hover,
+    &:focus {
+        background-color: $active-button;
+    }
+}
