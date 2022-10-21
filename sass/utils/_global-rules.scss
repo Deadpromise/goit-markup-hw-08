@@ -78,17 +78,29 @@ a {
 }
 
 .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: $desktop-breakpoint) {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
     /* outline: 1px solid yellowgreen; */
 }
 
 .main-header {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.17;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     text-align: center;
 
     color: $header-color;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
 }
