@@ -1,0 +1,144 @@
+.footer {
+    padding: 60px 0;
+    background-color: $secondary-background-color;
+}
+
+.footer-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // text-align: center;
+    // align-items: baseline;
+}
+
+.logo--bright {
+    display: block;
+    margin-bottom: 20px;
+    color: $secondary-color;
+}
+
+.address {
+    font-style: normal;
+}
+.address__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.address__item {
+    &:not(:first-child) {
+       margin-top: 8px; 
+    }
+}
+
+.address__map {
+    display: block;
+    color: $secondary-color;
+    transition: color $cubic-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.address__contact {
+    display: block;
+    color: $footer-links;
+    transition: color $cubic-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+
+
+.social-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    // margin-left: 70px;
+}
+
+.social-call {
+    margin-bottom: 20px;
+
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $secondary-color;
+}
+
+// .social-list__link--dark see at our-team.scss
+
+
+// .footer-form {
+//     display: flex;
+//     align-items: flex-end;
+//     width: 570px;
+//     margin-left: auto;
+// }
+
+// .footer-field {
+//     display: flex;
+//     flex-direction: column;
+
+// }
+
+// .footer-field input {
+//     width: 358px;
+//     height: 50px;
+//     margin: 0;
+//     padding: 0 15px;
+//     border-radius: 4px;
+//     background-color: transparent;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     font-size: 16px;
+//     line-height: 1.25;
+//     letter-spacing: 0.03em;
+//     color: $secondary-color;
+// }
+
+// .footer-field label {
+//     margin-bottom: 20px;
+// }
+
+// .send-call {
+//     font-weight: 700;
+// }
+
+// .subscr-but {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 200px;
+//     height: 50px;
+//     border-radius: 4px;
+//     padding: 5px;
+//     margin-left: 12px;
+
+//     font-family: inherit;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     letter-spacing: 0.06em;
+
+//     color: $secondary-color;
+//     background-color: $accent-color;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+//     transition: background-color $cubic-function;
+
+//     &:hover,
+//     &:focus {
+//         background-color: $active-button;
+//         }
+// }
+
+// .send-icon {
+//     margin-left: 10px;
+// }
