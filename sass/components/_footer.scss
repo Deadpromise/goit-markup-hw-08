@@ -7,6 +7,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
     // text-align: center;
     // align-items: baseline;
 }
@@ -60,6 +66,7 @@
     @media screen and (min-width: $tablet-breakpoint) {
         margin-top: 0;
     }
+
 }
 
 .social-call {
@@ -78,6 +85,11 @@
         justify-content: space-between;
         align-items: baseline;
     }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        padding: 0;
+        margin-right: 90px;
+    }
 }
 // .social-list__link--dark see at our-team.scss
 
@@ -88,6 +100,13 @@
     align-items: center;
     width: 100%;
     margin-top: 60px;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        margin-top: 0;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
     // margin-left: auto;
 }
 
@@ -95,11 +114,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    // width: 100%;
 }
 
 .mailing__input {
-    width: 100%;
+    width: 450px;
     height: 50px;
     margin-bottom: 20px;
     padding: 0 15px;
@@ -116,8 +135,14 @@
         color: rgba(255, 255, 255, 0.6);
     }
     
-    @media screen and (min-width: $tablet-breakpoint) {
-        max-width: 450px;
+    // @media screen and (min-width: $tablet-breakpoint) {
+    //     max-width: 450px;
+    // }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        width: 358px;
+        margin-bottom: 0;
+
     }
 }
 
@@ -154,6 +179,10 @@
     &:focus {
         background-color: $active-button;
         }
+    
+    @media screen and (min-width: $desktop-breakpoint) {
+        margin-left: 12px;
+    }
 }
 
 .mailing__icon {
