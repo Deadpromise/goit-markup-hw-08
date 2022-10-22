@@ -143,6 +143,12 @@ a {
   color: #2196f3;
 }
 
+.logo--bright {
+  display: block;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
 .navigation {
   /* outline: 1px solid red; */
   display: flex;
@@ -734,12 +740,6 @@ a {
   align-items: center;
 }
 
-.logo--bright {
-  display: block;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
 .address {
   font-style: normal;
 }
@@ -784,4 +784,29 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.mailing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.mailing__field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mailing__input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+}
+
+.mailing__call {
+  text-align: center;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

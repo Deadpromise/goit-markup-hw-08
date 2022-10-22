@@ -11,11 +11,8 @@
     // align-items: baseline;
 }
 
-.logo--bright {
-    display: block;
-    margin-bottom: 20px;
-    color: $secondary-color;
-}
+// logo--bright see at logo.scss
+
 
 .address {
     font-style: normal;
@@ -75,41 +72,44 @@
 // .social-list__link--dark see at our-team.scss
 
 
-// .footer-form {
-//     display: flex;
-//     align-items: flex-end;
-//     width: 570px;
-//     margin-left: auto;
-// }
+.mailing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    // margin-left: auto;
+}
 
-// .footer-field {
-//     display: flex;
-//     flex-direction: column;
+.mailing__field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
-// }
-
-// .footer-field input {
-//     width: 358px;
-//     height: 50px;
-//     margin: 0;
-//     padding: 0 15px;
-//     border-radius: 4px;
-//     background-color: transparent;
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//     font-size: 16px;
-//     line-height: 1.25;
-//     letter-spacing: 0.03em;
-//     color: $secondary-color;
-// }
+.mailing__input {
+    width: 100%;
+    height: 50px;
+    // margin: 0;
+    padding: 0 15px;
+    // border-radius: 4px;
+    // background-color: transparent;
+    // border: 1px solid rgba(255, 255, 255, 0.3);
+    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    // font-size: 16px;
+    // line-height: 1.25;
+    // letter-spacing: 0.03em;
+    // color: $secondary-color;
+}
 
 // .footer-field label {
 //     margin-bottom: 20px;
 // }
 
-// .send-call {
-//     font-weight: 700;
-// }
+.mailing__call {
+    text-align: center;
+    font-weight: 700;
+}
 
 // .subscr-but {
 //     display: flex;
