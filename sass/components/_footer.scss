@@ -27,6 +27,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        align-items: start;
+    }
 }
 
 .address__item {
@@ -67,6 +71,9 @@
         margin-top: 0;
     }
 
+    @media screen and (min-width: $desktop-breakpoint) {
+        align-items: start;
+    }
 }
 
 .social-call {
@@ -114,11 +121,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        align-items: start;
+    }
     // width: 100%;
 }
 
 .mailing__input {
-    width: 450px;
+    width: 90vw;
+    max-width: 450px;
     height: 50px;
     margin-bottom: 20px;
     padding: 0 15px;

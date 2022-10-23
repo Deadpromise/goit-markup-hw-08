@@ -185,6 +185,10 @@
         top: 16px;
         right: 16px;
     }
+
+        @media screen and (max-width: ($mobile-breakpoint - 1px)) {
+            padding: 30px 20px;
+        }
 }
 .menu-list__item {
     &:not(:first-child) {
@@ -226,6 +230,10 @@
     letter-spacing: 0.02em;
     
     color: $accent-color;
+
+    @media screen and (max-width: ($mobile-breakpoint - 1px)) {
+        font-size: 26px;
+    }
 }
 
 .contact-list__mail {
@@ -259,4 +267,9 @@
     letter-spacing: 0.02em;
     
     color: $accent-color;
+
+    @media screen and (max-width: ($mobile-breakpoint - 1px)) {
+        font-size: 14px;
+        
+    }
 }
